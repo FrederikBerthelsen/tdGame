@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://crgbmseoto6l0"]
+
+[ext_resource type="Texture2D" uid="uid://r0g3ayvljsm" path="res://assets/kenney_tower-defense-top-down/PNG/Default size/towerDefense_tile180.png" id="1_gsb17"]
+[ext_resource type="Script" path="res://Scenes/Turrets/gun_t1.gd" id="1_t5qwr"]
+[ext_resource type="Texture2D" uid="uid://bmu22rhd4a3ub" path="res://assets/kenney_tower-defense-top-down/PNG/Default size/towerDefense_tile249.png" id="2_ytfxh"]
+
+[node name="GunT1" type="Node2D"]
+script = ExtResource("1_t5qwr")
+
+[node name="Base" type="Sprite2D" parent="."]
+texture = ExtResource("1_gsb17")
+
+[node name="Turret" type="Sprite2D" parent="."]
+texture = ExtResource("2_ytfxh")
+offset = Vector2(12, 0)
+
+[node name="Muzzle" type="Marker2D" parent="Turret"]
+position = Vector2(0, -43)

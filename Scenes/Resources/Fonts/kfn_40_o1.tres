@@ -1,0 +1,6 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://b6f7qhwrrq1v4"]
+
+[ext_resource type="FontFile" uid="uid://cwolxoevgore0" path="res://assets/kenney_kenney-fonts/Fonts/Kenney Future Narrow.ttf" id="1_nejq7"]
+
+[resource]
+base_font = ExtResource("1_nejq7")
