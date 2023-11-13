@@ -5,5 +5,4 @@ func _physics_process(delta):
 	
 func turn():
 	var pos = get_global_mouse_position()
-	print(pos)
 	get_node("Turret").look_at(pos)
