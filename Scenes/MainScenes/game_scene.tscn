@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://xh4g56sseem"]
+[gd_scene load_steps=7 format=3 uid="uid://xh4g56sseem"]
 
 [ext_resource type="PackedScene" uid="uid://bvnnqtxbpbyk8" path="res://Scenes/Maps/map_1.tscn" id="1_2r8kx"]
 [ext_resource type="Script" path="res://Scenes/MainScenes/game_scene.gd" id="1_qvquo"]
 [ext_resource type="Texture2D" uid="uid://c1gvhyys1ple6" path="res://assets/kenney_ui-pack/PNG/blue_button12.png" id="2_n0jga"]
 [ext_resource type="Texture2D" uid="uid://bmu22rhd4a3ub" path="res://assets/kenney_tower-defense-top-down/PNG/Default size/towerDefense_tile249.png" id="3_i64rp"]
 [ext_resource type="Script" path="res://Scenes/MainScenes/UI.gd" id="3_ru0sx"]
+[ext_resource type="Texture2D" uid="uid://b2no5cgmfwvp3" path="res://assets/customTower.png" id="6_q8dhk"]
 
 [node name="GameScene" type="Node2D"]
 script = ExtResource("1_qvquo")
@@ -50,3 +51,20 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_i64rp")
+
+[node name="Blade" type="TextureButton" parent="UI/HUD/BuildBar" groups=["build_buttons"]]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("2_n0jga")
+stretch_mode = 0
+
+[node name="Icon" type="TextureRect" parent="UI/HUD/BuildBar/Blade"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_q8dhk")

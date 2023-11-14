@@ -67,6 +67,7 @@ func update_tower_preview():
 func cancel_build_mode():
 	build_mode = false
 	build_valid = false
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	get_node("UI/TowerPreview").free()
 
 
@@ -76,7 +77,6 @@ func verify_and_build():
 		new_tower.position = build_location
 		map_node.get_node("Turrets").add_child(new_tower, true)
 		map_node.get_node("TowerExclusion").set_cell(0, build_tile, 3, Vector2i(42,12))
-		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		return true
 	return false
 

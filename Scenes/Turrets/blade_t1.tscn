@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwvb5k7n8t8rf"]
+
+[ext_resource type="Script" path="res://Scenes/Turrets/blade_t1.gd" id="1_w668k"]
+[ext_resource type="Texture2D" uid="uid://r0g3ayvljsm" path="res://assets/kenney_tower-defense-top-down/PNG/Default size/towerDefense_tile180.png" id="2_u6pug"]
+[ext_resource type="Texture2D" uid="uid://b2no5cgmfwvp3" path="res://assets/customTower.png" id="3_lari4"]
+
+[node name="BladeT1" type="Node2D"]
+script = ExtResource("1_w668k")
+
+[node name="Base" type="Sprite2D" parent="."]
+texture = ExtResource("2_u6pug")
+offset = Vector2(16, 16)
+
+[node name="Blade" type="Sprite2D" parent="."]
+position = Vector2(16, 16)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("3_lari4")

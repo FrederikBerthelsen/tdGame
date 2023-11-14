@@ -10,6 +10,11 @@ var tower_data = {
 		"dmg" : 20,
 		"rof" : 2,
 		"range" : 450
+		}, 
+	"Blade_t1" : {
+		"dmg" : 5,
+		"rof" : 4,
+		"range" : 100
 		}
 	}
 
