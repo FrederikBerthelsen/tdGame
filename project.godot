@@ -15,6 +15,10 @@ run/main_scene="res://Scenes/scene_handler.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameData="*res://Scenes/Singletons/GameData.gd"
+
 [display]
 
 window/size/viewport_height=688
