@@ -21,7 +21,7 @@ GameData="*res://Scenes/Singletons/GameData.gd"
 
 [display]
 
-window/size/viewport_height=688
+window/size/viewport_height=704
 mouse_cursor/custom_image="res://assets/kenney_ui-pack-space-expansion/PNG/cursor_pointer3D.png"
 
 [dotnet]
